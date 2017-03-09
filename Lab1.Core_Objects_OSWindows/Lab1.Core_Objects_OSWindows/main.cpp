@@ -39,7 +39,6 @@
 
 #include <windows.h>
 #include <stdio.h>
-
 #define MAX_SEM_COUNT 10
 #define THREADCOUNT 12
 
@@ -47,12 +46,11 @@ HANDLE ghSemaphore;
 
 DWORD WINAPI ThreadProc(LPVOID);
 
-int main(void)
+int main(int argc, char* argv[])
 {
 	HANDLE aThread[THREADCOUNT];
 	DWORD ThreadID;
 	int i;
-
 	// Create a semaphore with initial and max counts of MAX_SEM_COUNT
 
 	ghSemaphore = CreateSemaphore(
@@ -60,6 +58,20 @@ int main(void)
 		MAX_SEM_COUNT,  // initial count
 		MAX_SEM_COUNT,  // maximum count
 		NULL);          // unnamed semaphore
+
+
+	//process 4
+	HANDLE hMutex = OpenMutex(
+		MUTEX_ALL_ACCESS, 0, "MyApp1.0");
+	if (!hMutex)
+		// Mutex doesn’t exist. This is
+		// the first instance so create
+		// the mutex.
+		hMutex = CreateMutex(0, 0, "MyApp1.0");
+	else
+		// The mutex exists so this is the
+		// the second instance so return.
+		return 0;
 
 	if (ghSemaphore == NULL)
 	{
@@ -96,7 +108,9 @@ int main(void)
 		CloseHandle(aThread[i]);
 
 	CloseHandle(ghSemaphore);
-
+	
+	//process 4
+	ReleaseMutex(hMutex);
 
 	system("pause");
 	return 0;
@@ -129,7 +143,7 @@ DWORD WINAPI ThreadProc(LPVOID lpParam)
 			bContinue = FALSE;
 
 			// Simulate thread spending time on task
-			Sleep(5);
+			Sleep(500);
 
 			// Release the semaphore when task is finished
 
