@@ -1,0 +1,5 @@
+﻿  main3.cpp
+e:\desktop\pg\visualstudio\education_nulp\sys-programming\stm-prog-lab-works\lab1\task3\main3.cpp(26): warning C4474: 'printf' : too many arguments passed for format string
+  e:\desktop\pg\visualstudio\education_nulp\sys-programming\stm-prog-lab-works\lab1\task3\main3.cpp(26): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+  Task3.vcxproj -> E:\Desktop\pg\VisualStudio\education_nulp\Sys-programming\Stm-prog-lab-works\Lab1\Debug\Task3.exe
+  Task3.vcxproj -> E:\Desktop\pg\VisualStudio\education_nulp\Sys-programming\Stm-prog-lab-works\Lab1\Debug\Task3.pdb (Partial PDB)

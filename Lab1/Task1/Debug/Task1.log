@@ -1,0 +1,9 @@
+﻿  main1.cpp
+e:\desktop\pg\visualstudio\education_nulp\sys-programming\stm-prog-lab-works\lab1\task1\main1.cpp(18): warning C4474: 'printf' : too many arguments passed for format string
+  e:\desktop\pg\visualstudio\education_nulp\sys-programming\stm-prog-lab-works\lab1\task1\main1.cpp(18): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+e:\desktop\pg\visualstudio\education_nulp\sys-programming\stm-prog-lab-works\lab1\task1\main1.cpp(24): warning C4474: 'printf' : too many arguments passed for format string
+  e:\desktop\pg\visualstudio\education_nulp\sys-programming\stm-prog-lab-works\lab1\task1\main1.cpp(24): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+e:\desktop\pg\visualstudio\education_nulp\sys-programming\stm-prog-lab-works\lab1\task1\main1.cpp(30): warning C4474: 'printf' : too many arguments passed for format string
+  e:\desktop\pg\visualstudio\education_nulp\sys-programming\stm-prog-lab-works\lab1\task1\main1.cpp(30): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+  Task1.vcxproj -> E:\Desktop\pg\VisualStudio\education_nulp\Sys-programming\Stm-prog-lab-works\Lab1\Debug\Task1.exe
+  Task1.vcxproj -> E:\Desktop\pg\VisualStudio\education_nulp\Sys-programming\Stm-prog-lab-works\Lab1\Debug\Task1.pdb (Partial PDB)
